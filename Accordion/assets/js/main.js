@@ -1,9 +1,14 @@
 let first_button = document.getElementById("first_button");
 let second_button = document.getElementById("second_button");
 let third_button = document.getElementById("third_button");
-let first_p = document.getElementById("first_p");
-let second_p = document.getElementById("second_p");
-let third_p = document.getElementById("third_p");
+let firstButtonInFirstButton = document.getElementById("firstButtonInFirstButton");
+let secondButtonInFirstButton = document.getElementById("secondButtonInFirstButton");
+let firstButtonInSecondButton = document.getElementById("firstButtonInSecondButton");
+let firstButtonInThirdButton = document.getElementById("firstButtonInThirdButton");
+let firstButtonFirstText = document.getElementById("firstButtonFirstText");
+let firstButtonSecondText = document.getElementById("firstButtonSecondText");
+let secondButtonFirstText = document.getElementById("secondButtonFirstText");
+let thirdButtonFirstText = document.getElementById("thirdButtonFirstText");
 let accordion = document.querySelector(".accordion");
 
 
@@ -11,37 +16,127 @@ let accordion = document.querySelector(".accordion");
 
 first_button.addEventListener("click",()=>{
      
-    if (first_p.style.display=="block") {
-        first_p.style.display="none";
+    if (firstButtonInFirstButton.style.display=="block") {
+        firstButtonInFirstButton.style.display="none";
 
     }
     else{
-        first_p.style.display="block";
+        firstButtonInFirstButton.style.display="block";
+    }
+    if (secondButtonInFirstButton.style.display=="block") {
+        secondButtonInFirstButton.style.display="none";
+
+    }
+    else{
+        secondButtonInFirstButton.style.display="block";
+    }
+    if (firstButtonFirstText.style.display == "block") {
+        firstButtonFirstText.style.display = "none"
+    }
+    
+    if (firstButtonSecondText.style.display == "block") {
+        firstButtonSecondText.style.display = "none"
     }
    
 })
 
-second_button.addEventListener("click",()=>{
-       
-    if (second_p.style.display=="block") {
-        second_p.style.display="none";
-    }
-    else{
-        second_p.style.display="block";
-    }
-      
-})
 
-third_button.addEventListener("click",()=>{
-        
-    if (third_p.style.display=="block") {
-        third_p.style.display="none";
+
+
+
+firstButtonInFirstButton.addEventListener("click",()=>{
+   
+    if (firstButtonFirstText.style.display == "block") {
+        firstButtonFirstText.style.display = "none"
     }
     else{
-        third_p.style.display="block";
+        firstButtonFirstText.style.display = "block"
     }
      
 })
+
+
+secondButtonInFirstButton.addEventListener("click",()=>{
+
+    if (firstButtonSecondText.style.display == "block") {
+        firstButtonSecondText.style.display = "none"
+    }
+    else{
+        firstButtonSecondText.style.display = "block"
+    }
+     
+})
+
+
+
+
+
+
+
+
+
+second_button.addEventListener("click",()=>{
+       
+    if (firstButtonInSecondButton.style.display=="block") {
+        firstButtonInSecondButton.style.display="none";
+    }
+    else{
+        firstButtonInSecondButton.style.display="block";
+    }
+    if (secondButtonFirstText.style.display=="block") {
+        secondButtonFirstText.style.display="none"
+     }
+      
+})
+
+firstButtonInSecondButton.addEventListener("click",()=>{
+
+     if (secondButtonFirstText.style.display=="block") {
+        secondButtonFirstText.style.display="none"
+     }
+     else{
+        secondButtonFirstText.style.display="block"
+     }
+
+})
+
+
+
+
+
+
+
+
+third_button.addEventListener("click",()=>{
+        
+    if (firstButtonInThirdButton.style.display=="block") {
+        firstButtonInThirdButton.style.display="none";
+    }
+    else{
+        firstButtonInThirdButton.style.display="block";
+    }
+    if (thirdButtonFirstText.style.display=="block") {
+        thirdButtonFirstText.style.display="none"
+    }
+     
+})
+
+firstButtonInThirdButton.addEventListener("click",()=>{
+
+    if (thirdButtonFirstText.style.display=="block") {
+        thirdButtonFirstText.style.display="none"
+    }
+    else{
+        thirdButtonFirstText.style.display="block"
+    }
+})
+
+
+
+
+
+
+
 
 
 ////////////////////2-ci tapsiriq sizin deyen usul//////////////////////////////////////////////

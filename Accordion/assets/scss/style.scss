@@ -1,10 +1,23 @@
 .accordion{
-    button{
+    .button{
         width: 100%;
         padding: 20px;
     }
+    .buttonInButton{
+        display: none;
+        background-color: grey;
+        color: white;
+        border: 1px solid white;
+        transition: 0.5s;
+
+    }
+    .buttonInButton:hover {
+        background-color: white;
+        color: black;
+    }
     p{
         margin-left: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         display: none;
     }
     .text-container{
