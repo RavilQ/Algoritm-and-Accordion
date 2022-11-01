@@ -1,0 +1,15 @@
+.accordion button {
+  width: 100%;
+  padding: 20px;
+}
+.accordion p {
+  margin-left: 10px;
+  display: none;
+}
+.accordion .text-container {
+  background-color: rgb(238, 238, 238);
+  padding: 0.1px;
+}
+.accordion .container-div {
+  margin-top: -1px;
+}/*# sourceMappingURL=style.css.map */
